@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Nemo KDEConnect Extension\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-17 22:19+0100\n"
+"PO-Revision-Date: 2021-12-17 22:56+0100\n"
+"Last-Translator: \n"
+"Language-Team: JoeJoeTV\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/nemo-kdeconnect.py:65
+msgid "Sending to {device_name}..."
+msgstr "Sende zu {device_name}..."
+
+#: src/nemo-kdeconnect.py:66
+msgid "Sending {num_files} file(s) to device"
+msgstr "Sende {num_files} Datei(en) an Gerät"
+
+#: src/nemo-kdeconnect.py:115
+msgid "Send via KDE Connect"
+msgstr "Sende via KDE Connect"
+
+#: src/nemo-kdeconnect.py:116
+msgid "Send selected files to connected devices using KDE Connect"
+msgstr "Sende ausgewählte Dateien an verbundene Geräte mit KDE Connect"
+
+#: src/nemo-kdeconnect.py:126
+msgid "Send File to {device_name}"
+msgstr "Sende Datei an {device_name}"
+
+#: src/nemo-kdeconnect.py:135
+msgid "Share files to connected devices via KDE Connect directly from within Nemo."
+msgstr "Sende Dateien an verbundene Geräte mit KDE Connect direkt aus Nemo."
