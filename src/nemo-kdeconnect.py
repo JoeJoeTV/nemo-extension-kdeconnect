@@ -13,6 +13,9 @@ from gi.repository import GObject, Nemo, Gtk, Gio, GLib, Notify
 
 import gettext, locale
 
+locale_dir = "./nemo-kdeconnect/locale" # GLib.get_home_dir() + "/.local/share/locale"
+locale_domain = "nemo-kdeconnect"
+
 # Get correct icon name from device type string
 def get_device_icon(device_type):
     if device_type == "dektop":
@@ -39,8 +42,8 @@ class KDEConnectMenu(GObject.GObject, Nemo.MenuProvider, Nemo.NameAndDescProvide
     def send_files(self, menu, files, device):
         # Setup translation
         locale.setlocale(locale.LC_ALL, "")
-        gettext.bindtextdomain("nemo-kdeconnect", GLib.get_home_dir() + "/.local/share/locale")
-        gettext.textdomain("nemo-kdeconnect")
+        gettext.bindtextdomain(locale_domain, locale_dir)
+        gettext.textdomain(locale_domain)
         _ = gettext.gettext
         
         # Add all file URIs to a list
@@ -111,8 +114,8 @@ class KDEConnectMenu(GObject.GObject, Nemo.MenuProvider, Nemo.NameAndDescProvide
         
         # Setup translation
         locale.setlocale(locale.LC_ALL, "")
-        gettext.bindtextdomain("nemo-kdeconnect", GLib.get_home_dir() + "/.local/share/locale")
-        gettext.textdomain("nemo-kdeconnect")
+        gettext.bindtextdomain(locale_domain, locale_dir)
+        gettext.textdomain(locale_domain)
         _ = gettext.gettext
         
         # Main Menu Item
@@ -137,4 +140,9 @@ class KDEConnectMenu(GObject.GObject, Nemo.MenuProvider, Nemo.NameAndDescProvide
         return [main_menuitem]
     
     def get_name_and_desc(self):
+        # Setup translation
+        locale.setlocale(locale.LC_ALL, "")
+        gettext.bindtextdomain(locale_domain, locale_dir)
+        gettext.textdomain(locale_domain)
+        _ = gettext.gettext
         return [("Nemo KDE Connect:::"+_("Share files to connected devices via KDE Connect directly from within Nemo."))]
