@@ -3,17 +3,17 @@
 # Name: KDE Connect Nemo Extension
 # Description: KDE Connect Integration for the Nemo file manager
 # by JoeJoeTV
-# https://github.com/JoeJoeTV/KDEConnectNemoExtension
-# Version: 1.0
+# https://github.com/JoeJoeTV/nemo-extension-kdeconnect
+# Version: 1.0.0
 
-import gi
+import os, gi
 
 gi.require_version('Notify', '0.7')
 from gi.repository import GObject, Nemo, Gtk, Gio, GLib, Notify
 
 import gettext, locale
 
-locale_dir = "./nemo-kdeconnect/locale" # GLib.get_home_dir() + "/.local/share/locale"
+locale_dir = os.path.dirname(os.path.realpath(__file__)) + "/nemo-kdeconnect/locale" # GLib.get_home_dir() + "/.local/share/locale"
 locale_domain = "nemo-kdeconnect"
 
 # Get correct icon name from device type string

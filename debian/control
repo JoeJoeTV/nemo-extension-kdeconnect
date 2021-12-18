@@ -1,0 +1,8 @@
+Package: nemo-kdeconnect
+Version: 1.0.0
+Priority: optional
+Maintainer: JoeJoeTV <hannes1033@gmail.com>
+Description: Extension for the Nemo file manager that adds the ability to send files to devices connected using KDEConnect directly from Nemo.
+Homepage: https://github.com/JoeJoeTV/nemo-extension-kdeconnect
+Architecture: all
+Depends: nemo, python3
