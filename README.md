@@ -16,3 +16,11 @@
 ## Other Distributions
 
  Download the .tar.gz file from the [Releases Section](https://github.com/JoeJoeTV/nemo-extension-kdeconnect/releases) and put it in the nemo-python extensions folder (`~/.local/share/nemo-python/extensions`)
+
+# Translations
+
+If anyone wants to translate this extension, you can just open a pull request with the added `.po` file
+
+# Bugs & Issues
+
+If you find any Bugs or Issure, please head over to the Issues tab and open a neu Issue there.
