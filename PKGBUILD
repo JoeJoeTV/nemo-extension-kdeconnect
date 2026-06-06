@@ -1,7 +1,7 @@
 # Maintainer: JoeJoeTV <joejoetv@joejoetv.de>
 
 pkgname=nemo-kdeconnect
-pkgver=1.0.1
+pkgver=1.0.2
 pkgrel=1
 pkgdesc='Extension for the Nemo file manager that adds the ability to send files to devices connected using KDEConnect directly from Nemo.'
 arch=('all')

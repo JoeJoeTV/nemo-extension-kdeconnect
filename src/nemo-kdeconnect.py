@@ -5,7 +5,7 @@
 # by JoeJoeTV
 # https://github.com/JoeJoeTV/nemo-extension-kdeconnect
 
-EXTENSION_VERSION="1.0.1"
+EXTENSION_VERSION="1.0.2"
 
 import os, gi, gettext, locale
 
@@ -82,7 +82,7 @@ class KDEConnectMenu(GObject.GObject, Nemo.MenuProvider, Nemo.NameAndDescProvide
         devices = []
         
         # Get list of available devices from DBus
-        params_variant = GLib.Variant("(bb)", (True, True))        
+        params_variant = GLib.Variant("(bb)", (True, True))
         device_ids = self.dbus_daemon.call_sync("devices", params_variant, Gio.DBusCallFlags.NONE, -1, None).unpack()[0]
         device_names = self.dbus_daemon.call_sync("deviceNames", params_variant, Gio.DBusCallFlags.NONE, -1, None).unpack()[0]
         
@@ -92,7 +92,7 @@ class KDEConnectMenu(GObject.GObject, Nemo.MenuProvider, Nemo.NameAndDescProvide
             device_type = dbus_device.get_cached_property("type").unpack()
             
             # Only add devices to list, which support the Share Plugin
-            if "kdeconnect_share" in dbus_device.get_cached_property("supportedPlugins").unpack():     
+            if "kdeconnect_share" in dbus_device.get_cached_property("supportedPlugins").unpack():
                 devices.append({
                     "id": device_id,
                     "name": device_names[device_id],
